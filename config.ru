@@ -7,7 +7,7 @@ module RailsConf
     module FFI
       extend Fiddle::Importer
 
-      dlload './target/release/librailsconf_demo-0410df1c134a4859.so'
+      dlload './target/release/librailsconf_demo-4b0ab779cff6d43f.so'
       extern "void incr(Analytics *, Buffer *)"
       extern "Buffer * report(Analytics *)"
       extern "Analytics * analytics()"

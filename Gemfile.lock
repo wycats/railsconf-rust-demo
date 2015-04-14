@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/wycats/rust-bridge.git
-  revision: 0b9b58c1ccad455d0f19af93503464497a9310ad
+  revision: 02d28285a499bd82a2c8a5f65810d46a35dbaf69
   branch: master
   specs:
     rust-bridge (0.1.0)
