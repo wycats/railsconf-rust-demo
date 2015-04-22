@@ -1,0 +1,15 @@
+[package]
+name = "railsconf-demo"
+version = "0.1.0"
+authors = ["wycats"]
+
+[lib]
+name = "railsconf_demo"
+crate-type = ["dylib"]
+
+[dependencies]
+url = '*'
+
+[dependencies.ruby-bridge]
+version = '*'
+git = 'http://github.com/wycats/rust-bridge'

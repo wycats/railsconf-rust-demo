@@ -1,0 +1,18 @@
+GIT
+  remote: git://github.com/wycats/rust-bridge.git
+  revision: 0b9b58c1ccad455d0f19af93503464497a9310ad
+  branch: master
+  specs:
+    rust-bridge (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rack (1.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rack
+  rust-bridge!
