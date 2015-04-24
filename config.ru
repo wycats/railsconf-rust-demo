@@ -7,7 +7,9 @@ module RailsConf
     module FFI
       extend Fiddle::Importer
 
-      dlload './target/release/librailsconf_demo-4b0ab779cff6d43f.so'
+      dlload Dir.glob('target/release/*').map {|f| {ext: File.extname(f), file: f} }
+                                         .reduce("") {|r, f| r = (f[:ext]==".so" || f[:ext]==".dylib") ? f[:file] : r }
+
       extern "void incr(Analytics *, Buffer *)"
       extern "Buffer * report(Analytics *)"
       extern "Analytics * analytics()"
